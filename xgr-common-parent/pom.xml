@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <xgr-commons.version>1.0.0</xgr-commons.version>
+        <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +36,11 @@
             <dependency>
                 <groupId>com.xbcRaisins.wgr</groupId>
                 <artifactId>xgr-common-spi</artifactId>
+                <version>${xgr-commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xbcRaisins.wgr</groupId>
+                <artifactId>xgr-common-core</artifactId>
                 <version>${xgr-commons.version}</version>
             </dependency>
         </dependencies>

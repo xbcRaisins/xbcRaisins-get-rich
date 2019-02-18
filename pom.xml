@@ -12,6 +12,7 @@
 
     <modules>
         <module>xgr-common-parent</module>
+        <!--  <module>xgr-common-core</module>-->
         <module>xgr-common-spi</module>
     </modules>
 </project>
