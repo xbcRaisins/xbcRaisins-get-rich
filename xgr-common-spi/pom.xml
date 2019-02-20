@@ -13,4 +13,13 @@
     <artifactId>xgr-common-spi</artifactId>
     <name>xgr-common-spi</name>
 
+    <dependencies>
+        <!-- neo4j -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
+    </dependencies>
+
+
 </project>

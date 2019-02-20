@@ -13,14 +13,15 @@
     <artifactId>xgr-common-parent</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <!-- <name>xgr-common-parent</name>
-     <description>xgr-common-parent</description>-->
 
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <xgr-commons.version>1.0.0</xgr-commons.version>
         <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+        <neo4j.version>2.0.6.RELEASE</neo4j.version>
+        <sentinel.version>0.2.1.RELEASE</sentinel.version>
+        <sentinel-annotation.version>1.4.1</sentinel-annotation.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +44,30 @@
                 <artifactId>xgr-common-core</artifactId>
                 <version>${xgr-commons.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.xbcRaisins.wgr</groupId>
+                <artifactId>xgr-common-base</artifactId>
+                <version>${xgr-commons.version}</version>
+            </dependency>
+            <!-- neo4j -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-neo4j</artifactId>
+                <version>${neo4j.version}</version>
+            </dependency>
+            <!-- Sentinel begin-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-annotation-aspectj</artifactId>
+                <version>${sentinel-annotation.version>}</version>
+            </dependency>
+            <!-- Sentinel end-->
         </dependencies>
     </dependencyManagement>
 
