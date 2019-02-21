@@ -9,13 +9,17 @@
        <!-- <relativePath>../xgr-common-parent</relativePath>-->
     </parent>
 
-    <groupId>com.xbcRaisins.base</groupId>
+   <!-- <groupId>com.xbcRaisins.base</groupId>-->
     <artifactId>xgr-common-base</artifactId>
     <name>xgr-common-base</name>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>com.xbcRaisins.wgr</groupId>
+            <artifactId>xgr-common-spi</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>

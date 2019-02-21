@@ -57,4 +57,14 @@ public class Coder {
     public void setHobby(String hobby) {
         this.hobby = hobby;
     }
+
+    @Override
+    public String toString() {
+        return "Coder{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", hobby='" + hobby + '\'' +
+                '}';
+    }
 }
