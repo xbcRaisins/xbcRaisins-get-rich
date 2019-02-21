@@ -6,11 +6,14 @@
         <groupId>com.xbcRaisins.wgr</groupId>
         <artifactId>xgr-common-parent</artifactId>
         <version>1.0.0</version>
-        <relativePath>../xgr-common-parent</relativePath>
+       <!-- <relativePath>../xgr-common-parent</relativePath>-->
     </parent>
 
+    <groupId>com.xbcRaisins.base</groupId>
     <artifactId>xgr-common-base</artifactId>
     <name>xgr-common-base</name>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -23,13 +26,33 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- neo4j -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-neo4j</artifactId>
+            <version>${neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-ogm-http-driver</artifactId>
+        </dependency>
+        <!-- Sentinel begin-->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-annotation-aspectj</artifactId>
+        </dependency>-->
+        <!-- Sentinel end-->
         <!-- neo4j -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-neo4j</artifactId>
         </dependency>
-    </dependencies>
 
+    </dependencies>
 
 </project>

@@ -20,16 +20,18 @@
         <xgr-commons.version>1.0.0</xgr-commons.version>
         <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
         <neo4j.version>2.0.6.RELEASE</neo4j.version>
+        <neo4j-driver.version>3.2.0-alpha04</neo4j-driver.version>
         <sentinel.version>0.2.1.RELEASE</sentinel.version>
         <sentinel-annotation.version>1.4.1</sentinel-annotation.version>
     </properties>
 
+    <!-- 管理依赖的jar 包 -->
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -55,8 +57,13 @@
                 <artifactId>spring-boot-starter-data-neo4j</artifactId>
                 <version>${neo4j.version}</version>
             </dependency>
-            <!-- Sentinel begin-->
             <dependency>
+                <groupId>org.neo4j</groupId>
+                <artifactId>neo4j-ogm-http-driver</artifactId>
+                <version>${neo4j-driver.version}</version>
+            </dependency>
+            <!-- Sentinel begin-->
+           <!-- <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
                 <version>${sentinel.version}</version>
@@ -66,7 +73,7 @@
                 <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-annotation-aspectj</artifactId>
                 <version>${sentinel-annotation.version>}</version>
-            </dependency>
+            </dependency>-->
             <!-- Sentinel end-->
         </dependencies>
     </dependencyManagement>
