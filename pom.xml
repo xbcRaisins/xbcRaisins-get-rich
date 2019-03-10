@@ -8,12 +8,21 @@
     <artifactId>xbcRaisins.get.rich</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>com.xbcRaisins.wgr</name>
+
 
     <modules>
         <module>xgr-common-parent</module>
         <module>xgr-common-core</module>
         <module>xgr-common-spi</module>
-        <module>xgr-common-base</module>
+        <module>xgr-common-web</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -10,8 +10,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/xgr-common-parent/pom.xml" />
         <option value="$PROJECT_DIR$/xgr-common-spi/pom.xml" />
-        <option value="$PROJECT_DIR$/xgr-common-base/pom.xml" />
         <option value="$PROJECT_DIR$/xgr-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/xgr-common-web/pom.xml" />
       </list>
     </option>
   </component>

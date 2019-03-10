@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xgr-common-base" />
         <module name="xgr-common-core" />
         <module name="xgr-common-spi" />
+        <module name="xgr-common-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xgr-common-base" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="xgr-common-base" options="" />
+      <module name="xgr-common-base" options="-parameters" />
       <module name="xgr-common-core" options="" />
-      <module name="xgr-common-parent" options="-parameters" />
+      <module name="xgr-common-parent" options="" />
       <module name="xgr-common-spi" options="" />
+      <module name="xgr-common-web" options="" />
     </option>
   </component>
 </project>

@@ -6,10 +6,9 @@
         <groupId>com.xbcRaisins.wgr</groupId>
         <artifactId>xgr-common-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../xgr-common-parent</relativePath>
     </parent>
 
     <artifactId>xgr-common-core</artifactId>
-    <name>xgr-common-core</name>
+    <packaging>jar</packaging>
 
 </project>

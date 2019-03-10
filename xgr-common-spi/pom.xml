@@ -6,20 +6,19 @@
     <parent>
         <groupId>com.xbcRaisins.wgr</groupId>
         <artifactId>xgr-common-parent</artifactId>
-        <version>1.0.0</version>
-        <relativePath>../xgr-common-parent</relativePath>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <artifactId>xgr-common-spi</artifactId>
     <name>xgr-common-spi</name>
+    <packaging>jar</packaging>
 
-    <dependencies>
-        <!-- neo4j -->
+    <!--<dependencies>
+        &lt;!&ndash; neo4j &ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-neo4j</artifactId>
         </dependency>
-    </dependencies>
+    </dependencies>-->
 
 
 </project>
