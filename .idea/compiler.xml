@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xgr-common-core" />
+        <module name="xgr-common-eureka" />
         <module name="xgr-common-spi" />
         <module name="xgr-common-web" />
       </profile>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="xgr-common-base" options="-parameters" />
       <module name="xgr-common-core" options="-parameters" />
+      <module name="xgr-common-eureka" options="-parameters" />
       <module name="xgr-common-parent" options="" />
       <module name="xgr-common-spi" options="-parameters" />
       <module name="xgr-common-web" options="-parameters" />

@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/xgr-common-spi/pom.xml" />
         <option value="$PROJECT_DIR$/xgr-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/xgr-common-web/pom.xml" />
+        <option value="$PROJECT_DIR$/xgr-common-eureka/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

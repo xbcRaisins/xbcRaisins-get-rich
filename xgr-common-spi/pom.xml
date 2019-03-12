@@ -12,13 +12,13 @@
     <name>xgr-common-spi</name>
     <packaging>jar</packaging>
 
-    <!--<dependencies>
-        &lt;!&ndash; neo4j &ndash;&gt;
+    <dependencies>
+        <!-- neo4j -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-neo4j</artifactId>
         </dependency>
-    </dependencies>-->
+    </dependencies>
 
 
 </project>
