@@ -8,7 +8,20 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.xbcRaisins.wgr</groupId>
     <artifactId>xgr-common-core</artifactId>
     <packaging>jar</packaging>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xbcRaisins.wgr</groupId>
+            <artifactId>xgr-common-spi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

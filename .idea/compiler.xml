@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="xgr-common-core" />
         <module name="xgr-common-eureka" />
+        <module name="xgr-common-service" />
         <module name="xgr-common-spi" />
         <module name="xgr-common-web" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="xgr-common-core" options="-parameters" />
       <module name="xgr-common-eureka" options="-parameters" />
       <module name="xgr-common-parent" options="" />
+      <module name="xgr-common-service" options="-parameters" />
       <module name="xgr-common-spi" options="-parameters" />
       <module name="xgr-common-web" options="-parameters" />
     </option>

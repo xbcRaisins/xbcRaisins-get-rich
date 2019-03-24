@@ -15,6 +15,7 @@
         <module>xgr-common-core</module>
         <module>xgr-common-spi</module>
         <module>xgr-common-web</module>
+        <module>xgr-common-service</module>
     </modules>
 
     <build>
