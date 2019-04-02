@@ -48,4 +48,9 @@ public class ApiResult<T> implements Serializable {
             this.message = message;
         }
     }
+
+    @Override
+    public String toString() {
+        return "status=" + status + ",message=" + message + ",data=" + data + "innerMsg=" + innerMsg;
+    }
 }
