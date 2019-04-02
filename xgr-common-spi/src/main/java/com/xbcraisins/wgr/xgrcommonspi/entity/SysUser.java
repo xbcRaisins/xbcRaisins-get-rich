@@ -4,69 +4,46 @@ import lombok.Data;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
-@Data
-@ToString
+
 public class SysUser implements Serializable {
 
     private Long id;
 
-    /**
-     * 用户编号
-     */
-    private String usercode;
+    private String name;
 
-    /**
-     * 用户名
-     */
-    private String username;
-
-    /**
-     * 密码
-     */
     private String password;
 
-    /**
-     * 盐
-     */
     private String salt;
 
-    /**
-     * 用户角色
-     */
-    private List<SysRole> roleList;
+    private String email;
 
-    public SysUser() {
+    private String mobile;
+
+    private Byte status;
+
+    private Long deptId;
+
+    private String deptName;
+
+    private Byte delFlag;
+
+    private String createBy;
+
+    private Date createTime;
+
+    private String lastUpdateBy;
+
+    private Date lastUpdateTime;
+
+    public String getName() {
+        return name;
     }
 
-    public SysUser(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUsercode() {
-        return usercode;
-    }
-
-    public void setUsercode(String usercode) {
-        this.usercode = usercode;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -85,11 +62,91 @@ public class SysUser implements Serializable {
         this.salt = salt;
     }
 
-    public List<SysRole> getRoleList() {
-        return roleList;
+    public String getEmail() {
+        return email;
     }
 
-    public void setRoleList(List<SysRole> roleList) {
-        this.roleList = roleList;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    public Long getDeptId() {
+        return deptId;
+    }
+
+    public void setDeptId(Long deptId) {
+        this.deptId = deptId;
+    }
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public Byte getDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(Byte delFlag) {
+        this.delFlag = delFlag;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getLastUpdateBy() {
+        return lastUpdateBy;
+    }
+
+    public void setLastUpdateBy(String lastUpdateBy) {
+        this.lastUpdateBy = lastUpdateBy;
+    }
+
+    public Date getLastUpdateTime() {
+        return lastUpdateTime;
+    }
+
+    public void setLastUpdateTime(Date lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
     }
 }

@@ -35,6 +35,12 @@ public class ApiResult<T> implements Serializable {
         }
     }
 
+    public ApiResult(T data) {
+        this();
+        this.data = data;
+        this.message = "";
+    }
+
     public ApiResult(T data, String message) {
         this();
         this.data = data;

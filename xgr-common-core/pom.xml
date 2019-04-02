@@ -17,6 +17,7 @@
         <dependency>
             <groupId>com.xbcRaisins.wgr</groupId>
             <artifactId>xgr-common-spi</artifactId>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
