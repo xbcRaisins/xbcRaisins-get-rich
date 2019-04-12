@@ -31,16 +31,20 @@
             <groupId>com.xbcRaisins.wgr</groupId>
             <artifactId>xgr-common-spi</artifactId>
         </dependency>
-        <!--<dependency>
+        <dependency>
+            <groupId>com.xbcRaisins.wgr</groupId>
+            <artifactId>xgr-common-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-        </dependency>-->
+        </dependency>
         <!-- neo4j -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-neo4j</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- security 权限控制-->
         <dependency>
@@ -82,12 +86,7 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-        <!-- redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>2.1.4.RELEASE</version>
-        </dependency>
+
     </dependencies>
 
     <build>
