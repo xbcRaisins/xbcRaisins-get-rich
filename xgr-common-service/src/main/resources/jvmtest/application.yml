@@ -1,0 +1,12 @@
+netty:
+  tcp:
+    port: 6000
+
+# 相对路径的path会被启动命令执行的路径影响，所以可以在启动命令里面配置
+logging:
+  path: logs
+  file: spring-boot.log
+
+app:
+  hash-head: "000"
+  msg-interval: 2
